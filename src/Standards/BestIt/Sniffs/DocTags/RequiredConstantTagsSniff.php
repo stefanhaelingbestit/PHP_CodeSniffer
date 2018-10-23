@@ -15,21 +15,4 @@ use BestIt\Sniffs\ConstantRegistrationTrait;
 class RequiredConstantTagsSniff extends AbstractRequiredTagsSniff
 {
     use ConstantRegistrationTrait;
-
-    /**
-     * Returns the required tag data.
-     *
-     * The order in which they appear in this array os the order for tags needed.
-     *
-     * @return array List of tag metadata
-     */
-    protected function getTagRules(): array
-    {
-        return [
-            'var' => [
-                'min' => 1,
-                'max' => 1
-            ],
-        ];
-    }
 }
