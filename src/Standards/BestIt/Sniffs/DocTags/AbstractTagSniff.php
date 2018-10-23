@@ -30,22 +30,16 @@ abstract class AbstractTagSniff extends AbstractSniff
 {
     /**
      * Code that the tag content format is invalid.
-     *
-     * @var string
      */
     public const CODE_TAG_CONTENT_FORMAT_INVALID = 'TagContentFormatInvalid';
 
     /**
      * Message that the tag content format is invalid.
-     *
-     * @var string
      */
     protected const MESSAGE_TAG_CONTENT_FORMAT_INVALID = '%s is invalid. Expected format: "%s"';
 
     /**
      * Returns true if there is a matching tag.
-     *
-     * @return bool
      */
     protected function areRequirementsMet(): bool
     {

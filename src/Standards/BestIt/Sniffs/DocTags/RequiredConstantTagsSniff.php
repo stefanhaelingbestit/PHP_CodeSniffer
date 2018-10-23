@@ -25,11 +25,6 @@ class RequiredConstantTagsSniff extends AbstractRequiredTagsSniff
      */
     protected function getTagRules(): array
     {
-        return [
-            'var' => [
-                'min' => 1,
-                'max' => 1
-            ],
-        ];
+        return [];
     }
 }
